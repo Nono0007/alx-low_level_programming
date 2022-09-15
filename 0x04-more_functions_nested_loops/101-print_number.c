@@ -5,12 +5,12 @@
 int _putchar(char c);
 
 /**
- * print_number - like a hello world
- *
- * @n: params an integer
- *
- * No return
- */
+* print_number - like a hello world
+*
+* @n: params an integer
+*
+* No return
+*/
 
 void print_number(int n)
 {
@@ -28,8 +28,8 @@ void print_number(int n)
 		n1 = n;
 	}
 
-        if (n1 / 10)
-        {
+	if (n1 / 10)
+	{
 		print_number(n1 / 10);
 	}
 
