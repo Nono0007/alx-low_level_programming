@@ -4,7 +4,10 @@ nclude "main.h"
  * _strcmp - function that compares two strings.
  * @s1: first string
  * @s2: second string
- * Return: 0.
+ * Return:
+ *                 returns zero if s1 == s2
+ *                 returns negative number if s1 < s2
+ *                 returns positive numer if s1 > s2
  */
 
 int _strcmp(char *s1, char *s2)
@@ -32,6 +35,7 @@ int _strcmp(char *s1, char *s2)
 		}
 		else
 			i++;
+
 	}
 	return (diff);
 }
