@@ -35,7 +35,7 @@ int coinConverter(int i)
 
 		count++;
 	}
-	retun (count);
+	return (count);
 }
 
 /**
