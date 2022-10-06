@@ -5,6 +5,10 @@
  *@nmemb:no of elements
  *@size:size of elements
  *@size:size of elements
+ *
+ * Return: NULL is size or nmemb == 0.
+ * NULL if malloc fails.
+ * Pointer to memory allocated if successful.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
