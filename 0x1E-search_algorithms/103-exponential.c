@@ -4,6 +4,7 @@
  * recursive_search - searches for a value in an array of
  * integers using the Binary search algorithm
  *
+ *
  * @array: input array
  * @size: size of the array
  * @value: value to search in
@@ -43,8 +44,9 @@ int recursive_search(int *array, size_t size, int value)
  * the index of the number
  *
  * @array: input array
- * @size: sizeof the array
- * @value: index of the number
+ * @size: size of the array
+ * @value: value to search in
+ * Return: index of the number
  */
 int binary_search(int *array, size_t size, int value)
 {
@@ -59,10 +61,10 @@ int binary_search(int *array, size_t size, int value)
 }
 
 /**
- * exponential_search - searches for a value in an arry of
+ * exponential_search - searches for a value in an array of
  * integers using the Exponential search algorithm
  *
- * @arrat: input array
+ * @array: input array
  * @size: size of the array
  * @value: value to search in
  * Return: index of the number
@@ -78,7 +80,7 @@ int exponential_search(int *array, size_t size, int value)
 	if (array[0] == value)
 		return (0);
 
-	index - 1;
+	index = 1;
 
 	while (array[index] < value && index < size)
 	{
